@@ -15,7 +15,7 @@ To get this model into production, we are creating a Lambda function that receiv
 
 Instructions on how to deploy a model to AWS lambda were found on this [Towards Data Science post, by Ben Weber](https://towardsdatascience.com/data-science-for-startups-model-services-2facf2dde81d).
 
-### Example of implementation
+### Implementation Example
 ```
 import requests
 import json
