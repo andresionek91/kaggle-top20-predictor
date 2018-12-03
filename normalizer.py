@@ -1,5 +1,5 @@
 # defining the min and max scores for normalization
-MIN_SCORE, MAX_SCORE = -8.054542604814351, 5.494637181092647
+MIN_SCORE, MAX_SCORE = -8.054542604814351, 6.998829604417807
 
 def normalize(score):
     """
