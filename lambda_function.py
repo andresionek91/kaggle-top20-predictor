@@ -27,7 +27,8 @@ def lambda_handler(event, context):
     print(score)
     # build response
     r = {"score": score, "proba": proba,
-         "message": "This means that the probability of you earn more than U$ 100.000 per year is {}.".format(proba)}
+         "message": "The probability of someone \
+    with this score earn more than USD 100.000/year is {}.".format(proba)}
     print(r)
     to_s3(treated_event)
 
