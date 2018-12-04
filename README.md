@@ -20,16 +20,6 @@ Instructions on how to deploy a model to AWS lambda were found on this [Towards 
 import requests
 import json
 
-def treat_input(input_json):
-    treated = dict()
-    for key, value in input_json.items():
-        if key[0] == 'Q':
-            treated[value] = 1
-        else:
-            treated[key] = 1
-    return treated
-
-
 input_json = {
     "Q1": "q1_other",
     "Q2": "q2_25_29",
@@ -56,10 +46,8 @@ input_json = {
     "q42_revenu": "on"
 }
 
-treated_input_json = treat_input(input_json)
 header = {'Content-Type': 'application/x-www-form-urlencoded'}
-
 url = 'https://tk9k0fkvyj.execute-api.us-east-2.amazonaws.com/default/top20-predictor'
 
-requests.post(url, params=treated_input_json, headers=header).json()
+requests.post(url, params=input_json, headers=header).json()
 ```
