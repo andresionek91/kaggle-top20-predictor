@@ -18,7 +18,6 @@ Instructions on how to deploy a model to AWS lambda were found on this [Towards 
 ### Implementation Example
 ```
 import requests
-import json
 
 input_json = {
     "Q1": "q1_other",
